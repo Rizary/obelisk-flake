@@ -4,7 +4,7 @@ let
   noCheck = p: final.haskell.lib.dontCheck p;
   noHaddock = p: final.haskell.lib.dontHaddock p;
   fast = p: noHaddock (noCheck p);
-  obelisk = import rhyolite-obelisk { system = final.system; profiling = true; };
+  obelisk = import rhyolite-obelisk { system = final.system; profiling = true; config.allowBroken = true;};
 in
 {
   obeliskFlake = rec {

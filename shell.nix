@@ -6,11 +6,11 @@ mkDevShell {
   name = "obelisk-flake";
   motd = "otherthing";
   commands = [
-    {
-      name = "ls-reflex";
-      help = "ls-reflex folder";
-      command = "ls ${obeliskFlake.obFlake.ghcjs.frontend} || echo '''ls failed''' ";
-    }
+    # {
+    #   name = "ls-reflex";
+    #   help = "ls-reflex folder";
+    #   command = "ls ${obeliskFlake.obFlake.ghcjs.frontend} || echo '''ls failed''' ";
+    # }
   ];
 
   bash = {
