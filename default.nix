@@ -1,7 +1,7 @@
 { system ? builtins.currentSystem
 , obelisk ? import ./.obelisk/impl {
     inherit system;
-    iosSdkVersion = "10.2";
+    iosSdkVersion = null;
 
     # You must accept the Android Software Development Kit License Agreement at
     # https://developer.android.com/studio/terms in order to build Android apps.
@@ -16,10 +16,10 @@
 }:
 with obelisk;
 project ./. ({ ... }: {
-  android.applicationId = "systems.obsidian.obelisk.examples.minimal";
-  android.displayName = "Obelisk Minimal Example";
-  ios.bundleIdentifier = "systems.obsidian.obelisk.examples.minimal";
-  ios.bundleName = "Obelisk Minimal Example";
+  android.applicationId = null;
+  android.displayName = null;
+  ios.bundleIdentifier = null;
+  ios.bundleName = null;
 
   packages = {
     frontend = ./frontend;

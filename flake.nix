@@ -33,8 +33,6 @@
         {
           legacyPackages = pkgs.obeliskFlake;
 
-          defaultPackage = pkgs.obeliskFlake.obPlatform.command;
-
           packages = flake-utils.lib.flattenTree pkgs.obeliskFlake;
 
           devShell = import ./shell.nix { inherit pkgs; };
