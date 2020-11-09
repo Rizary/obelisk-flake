@@ -19,16 +19,16 @@
     },
     "devshell": {
       "locked": {
-        "lastModified": 1603394213,
-        "narHash": "sha256-JoZrmyhQ9KCRXBt1CwRTn2L4SwbUryNWpERU/ILlQ3g=",
+        "lastModified": 1604560786,
+        "narHash": "sha256-4rsc0Tio5a7ErVWI75Win/Y3IDn17V1MK28LusERBs8=",
         "owner": "numtide",
         "repo": "devshell",
-        "rev": "0d44c41e670d0ef700c42006acac30ae91ecf9a2",
+        "rev": "69b1e40283ac262b557b596a8211c0c05040c9ef",
         "type": "github"
       },
       "original": {
         "owner": "numtide",
-        "ref": "master",
+        "ref": "packages-from",
         "repo": "devshell",
         "type": "github"
       }
@@ -64,6 +64,23 @@
         "type": "github"
       }
     },
+    "patch": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604669388,
+        "narHash": "sha256-t3dxKaUry+3JBDhN6KnNHMQAi8r4XYvsF8Ot6k4N9cY=",
+        "owner": "reflex-frp",
+        "repo": "patch",
+        "rev": "064a0e8d839b4302e4cac041051aee04614ccc8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "reflex-frp",
+        "ref": "develop",
+        "repo": "patch",
+        "type": "github"
+      }
+    },
     "rhyolite-obelisk": {
       "flake": false,
       "locked": {
@@ -87,6 +104,7 @@
         "devshell": "devshell",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
+        "patch": "patch",
         "rhyolite-obelisk": "rhyolite-obelisk"
       }
     }

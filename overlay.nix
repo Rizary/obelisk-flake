@@ -1,4 +1,4 @@
-{ beam, rhyolite-obelisk }:
+{ beam, rhyolite-obelisk, patch }:
 final: prev:
 let
   noCheck = p: final.haskell.lib.dontCheck p;
@@ -29,6 +29,6 @@ in
               overrides = composeExtensions haskellOverrides (def.overrides or (_: _: {}));
             });
       };
-    obFlake = prev.callPackage ./obFlake.nix {};
+    obFlake = prev.callPackage ./obFlake.nix { inherit patch; };
   };
 }
